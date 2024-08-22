@@ -47,10 +47,10 @@ $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
 
 // Configura el servidor SMTP para enviar el correo
 $mail->IsSMTP(); // Habilita el uso de SMTP
-$mail->Host = "ssl://c1740415.ferozo.com:465"; // Servidor de correo saliente (SMTP)
+$mail->Host = "ssl://:465"; // Servidor de correo saliente (SMTP)
 $mail->SMTPAuth = true; // Habilita la autenticación SMTP
-$mail->Username = "hola@somosbrandom.com"; // Nombre de usuario del correo (dirección de correo)
-$mail->Password = "BRANDOMinfo2020"; // Contraseña del correo
+$mail->Username = "mail@tudominio.com"; // Nombre de usuario del correo (dirección de correo)
+$mail->Password = ""; // Contraseña del correo
 
 // Envía el correo y muestra un mensaje según el resultado
 if ($mail->Send()) {
