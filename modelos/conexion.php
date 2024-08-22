@@ -10,7 +10,9 @@ class Conexion
         // - dbname: nombre de la base de datos
         // - Usuario: nombre de usuario para la conexión
         // - Contraseña: contraseña para la conexión
-        $link = new PDO('mysql:host=193.203.175.97; dbname=u637818572_mvc_php', 'u637818572_mvc_php', 'u637818572_PHP-151206');
+                $link = new PDO("mysql:host=tu_host;dbname=tu_base_de_datos",
+                        "tu_usuario",
+                        "tu_contraseña");
 
         // Línea de conexión comentada (posiblemente usada para conexión a otra base de datos)
         // $link = new PDO('mysql:host=159.223.196.41; dbname=sistemacontableNuevo', 'remoto', 'Dep-sistemas2021');
